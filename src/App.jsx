@@ -1,7 +1,9 @@
+import Hero from "./components/Hero";
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
+    <div className="min-h-screen bg-[var(--negro)]">
+      <Hero />
     </div>
   )
 }

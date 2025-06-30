@@ -4,9 +4,8 @@
   /* Color Palette */
   --verde: #93ca07;
   --verde-limon: #d6f576;
-  --negro: #040404;
+  --negro: #040404; /* Color princial del background */
   --gris: #646463;
   --gris-claro: #a4a4a4;
   --blanco: #F1F1F1;
 }
-
