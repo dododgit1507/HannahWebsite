@@ -29,7 +29,7 @@ const NavBar = () => {
                 {/* Logo */}
                 <div className="flex items-center">
                     <h1 className="text-2xl font-bold text-[var(--blanco)]">
-                        <span className="text-[var(--verde)]">Hanna</span> Produce
+                        <span className="text-[var(--verde)]">Hannah</span> Produce
                     </h1>
                 </div>
 
