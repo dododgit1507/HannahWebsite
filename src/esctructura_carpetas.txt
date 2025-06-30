@@ -1,0 +1,211 @@
+├── public/
+│   ├── favicon.ico
+│   ├── logo.svg
+│   ├── logo-white.svg
+│   ├── images/
+│   │   ├── hero/
+│   │   │   ├── hero-bg.jpg
+│   │   │   ├── hero-video.mp4
+│   │   │   └── hero-mobile.jpg
+│   │   ├── services/
+│   │   │   ├── web-development.jpg
+│   │   │   ├── mobile-app.jpg
+│   │   │   ├── consulting.jpg
+│   │   │   └── ecommerce.jpg
+│   │   ├── team/
+│   │   │   ├── ceo.jpg
+│   │   │   ├── cto.jpg
+│   │   │   ├── lead-dev.jpg
+│   │   │   └── designer.jpg
+│   │   ├── projects/
+│   │   │   ├── project-1.jpg
+│   │   │   ├── project-2.jpg
+│   │   │   ├── project-3.jpg
+│   │   │   └── project-4.jpg
+│   │   ├── clients/
+│   │   │   ├── client-1.svg
+│   │   │   ├── client-2.svg
+│   │   │   ├── client-3.svg
+│   │   │   └── client-4.svg
+│   │   ├── testimonials/
+│   │   │   ├── testimonial-1.jpg
+│   │   │   ├── testimonial-2.jpg
+│   │   │   └── testimonial-3.jpg
+│   │   └── icons/
+│   │       ├── feature-1.svg
+│   │       ├── feature-2.svg
+│   │       └── feature-3.svg
+│   └── documents/
+│       ├── company-brochure.pdf
+│       └── portfolio.pdf
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Navbar/
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── MobileMenu.jsx
+│   │   │   │   ├── Logo.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Footer/
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── SocialLinks.jsx
+│   │   │   │   ├── ContactInfo.jsx
+│   │   │   │   └── index.js
+│   │   │   └── Layout/
+│   │   │       ├── Layout.jsx
+│   │   │       └── index.js
+│   │   ├── sections/
+│   │   │   ├── Hero/
+│   │   │   │   ├── HeroSection.jsx
+│   │   │   │   ├── HeroBanner.jsx
+│   │   │   │   ├── HeroContent.jsx
+│   │   │   │   ├── CallToAction.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── About/
+│   │   │   │   ├── AboutSection.jsx
+│   │   │   │   ├── CompanyStats.jsx
+│   │   │   │   ├── MissionVision.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Services/
+│   │   │   │   ├── ServicesSection.jsx
+│   │   │   │   ├── ServiceCard.jsx
+│   │   │   │   ├── ServiceGrid.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Features/
+│   │   │   │   ├── FeaturesSection.jsx
+│   │   │   │   ├── FeatureCard.jsx
+│   │   │   │   ├── FeatureList.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Team/
+│   │   │   │   ├── TeamSection.jsx
+│   │   │   │   ├── TeamMember.jsx
+│   │   │   │   ├── TeamGrid.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Projects/
+│   │   │   │   ├── ProjectsSection.jsx
+│   │   │   │   ├── ProjectCard.jsx
+│   │   │   │   ├── ProjectGrid.jsx
+│   │   │   │   ├── ProjectFilter.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Testimonials/
+│   │   │   │   ├── TestimonialsSection.jsx
+│   │   │   │   ├── TestimonialCard.jsx
+│   │   │   │   ├── TestimonialSlider.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Clients/
+│   │   │   │   ├── ClientsSection.jsx
+│   │   │   │   ├── ClientLogo.jsx
+│   │   │   │   ├── ClientSlider.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Pricing/
+│   │   │   │   ├── PricingSection.jsx
+│   │   │   │   ├── PricingCard.jsx
+│   │   │   │   ├── PricingTable.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── FAQ/
+│   │   │   │   ├── FAQSection.jsx
+│   │   │   │   ├── FAQItem.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Contact/
+│   │   │   │   ├── ContactSection.jsx
+│   │   │   │   ├── ContactForm.jsx
+│   │   │   │   ├── ContactInfo.jsx
+│   │   │   │   ├── Map.jsx
+│   │   │   │   └── index.js
+│   │   │   └── CTA/
+│   │   │       ├── CTASection.jsx
+│   │   │       ├── CTABanner.jsx
+│   │   │       └── index.js
+│   │   ├── ui/
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Card/
+│   │   │   │   ├── Card.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Modal/
+│   │   │   │   ├── Modal.jsx
+│   │   │   │   ├── ModalOverlay.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Input/
+│   │   │   │   ├── Input.jsx
+│   │   │   │   ├── TextArea.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Loading/
+│   │   │   │   ├── Spinner.jsx
+│   │   │   │   ├── Skeleton.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Badge/
+│   │   │   │   ├── Badge.jsx
+│   │   │   │   └── index.js
+│   │   │   └── ScrollToTop/
+│   │   │       ├── ScrollToTop.jsx
+│   │   │       └── index.js
+│   │   └── animations/
+│   │       ├── FadeIn.jsx
+│   │       ├── SlideIn.jsx
+│   │       ├── CountUp.jsx
+│   │       └── index.js
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── index.js
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── index.js
+│   │   ├── Services/
+│   │   │   ├── Services.jsx
+│   │   │   └── index.js
+│   │   ├── Projects/
+│   │   │   ├── Projects.jsx
+│   │   │   └── index.js
+│   │   ├── Contact/
+│   │   │   ├── Contact.jsx
+│   │   │   └── index.js
+│   │   └── NotFound/
+│   │       ├── NotFound.jsx
+│   │       └── index.js
+│   ├── hooks/
+│   │   ├── useIntersectionObserver.js
+│   │   ├── useScrollPosition.js
+│   │   ├── useLocalStorage.js
+│   │   ├── useMediaQuery.js
+│   │   ├── useForm.js
+│   │   └── useClickOutside.js
+│   ├── context/
+│   │   ├── ThemeContext.jsx
+│   │   ├── UIContext.jsx
+│   │   └── AnimationContext.jsx
+│   ├── data/
+│   │   ├── company.js
+│   │   ├── navigation.js
+│   │   ├── services.js
+│   │   ├── team.js
+│   │   ├── projects.js
+│   │   ├── testimonials.js
+│   │   ├── clients.js
+│   │   ├── pricing.js
+│   │   └── faq.js
+│   ├── utils/
+│   │   ├── constants.js
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   ├── animations.js
+│   │   ├── api.js
+│   │   └── formatters.js
+│   ├── styles/
+│   │   ├── globals.css
+│   │   ├── components.css
+│   │   ├── animations.css
+│   │   └── utilities.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+├── postcss.config.js
+└── README.md
