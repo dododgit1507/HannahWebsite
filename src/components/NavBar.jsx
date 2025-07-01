@@ -36,7 +36,7 @@ const NavBar = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-8">
                     <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</a>
-                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Productos</a>
+                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</a>
                     <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</a>
                     <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</a>
                     <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300">
@@ -63,7 +63,7 @@ const NavBar = () => {
                 <div className="md:hidden bg-[var(--negro)] absolute left-0 right-0 z-20 shadow-lg py-4 px-6 animate-fadeIn">
                     <div className="flex flex-col space-y-4">
                         <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</a>
-                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Productos</a>
+                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</a>
                         <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</a>
                         <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</a>
                         <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300 w-full text-center">
