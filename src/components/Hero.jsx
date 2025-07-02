@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './NavBar';
 import CardSwap, { Card } from './ReactBits/components/CardSwap';
 import { projectsData } from '@/utils/ProjectsData';
 import Threads from '@/components/ReactBits/backgrounds/Threads';
@@ -19,11 +18,6 @@ const Hero = () => {
                         enableMouseInteraction={true}
                     />
                 </div>
-            </div>
-
-            {/* Navbar */}
-            <div className="relative z-10">
-                <NavBar />
             </div>
 
             {/* Hero content - Two column layout */}

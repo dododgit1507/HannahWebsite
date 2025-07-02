@@ -1,14 +1,12 @@
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import MainLayout from "@/layouts/MainLayout";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Inicio = () => {
     return (
-        <div className="min-h-screen bg-[var(--negro)] flex flex-col">
+        <MainLayout>
             <Hero />
-            <Footer />
-            <WhatsAppButton phoneNumber="925757151" />
-        </div>
+        </MainLayout>
     )
 }
 
