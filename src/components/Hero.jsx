@@ -1,8 +1,7 @@
 import React from 'react';
-import NavBar from './NavBar';
 import CardSwap, { Card } from './ReactBits/components/CardSwap';
-// import ProjectCard from './ProjectCard';
 import { projectsData } from '@/utils/ProjectsData';
+import Threads from '@/components/ReactBits/backgrounds/Threads';
 
 const Hero = () => {
     return (
@@ -10,9 +9,15 @@ const Hero = () => {
             {/* Subtle background gradient */}
             <div className="absolute inset-0 z-0 bg-gradient-to-br from-[var(--negro)] via-[#121212] to-[#1a1a1a]"></div>
 
-            {/* Navbar */}
-            <div className="relative z-10">
-                <NavBar />
+            {/* Aurora background effect */}
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0">
+                    <Threads
+                        amplitude={4}
+                        distance={0.7}
+                        enableMouseInteraction={true}
+                    />
+                </div>
             </div>
 
             {/* Hero content - Two column layout */}
@@ -45,14 +50,14 @@ const Hero = () => {
                         height={300}
                         cardDistance={40}
                         verticalDistance={50}
-                        delay={2000}
+                        delay={5000}
                         pauseOnHover={false} // Si paso el mouse por encima se detiene
                         skewAmount={8}
                         easing="elastic"
                         onCardClick={(index) => console.log(`Clicked project: ${projectsData[index].title}`)}
                     >
                         {projectsData.map((project) => (
-                            <Card key={project.id}>
+                            <Card key={project.id} >
                                 <h3 className="font-semibold p-2 text-[var(--blanco)]">{project.title}</h3>
                                 <img src={project.image} alt={project.title} />
                             </Card>
