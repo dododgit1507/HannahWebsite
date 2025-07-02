@@ -1,9 +1,12 @@
 import MainLayout from '@/layouts/MainLayout'
+import Estructura from '@/components/Estructura'
+import PilarSection from '@/components/PilarSection'
 
 const Nosotros = () => {
     return (
         <MainLayout>
-            <h1 className="text-2xl font-bold text-[var(--blanco)]">Nosotros</h1>
+            <PilarSection />
+            <Estructura />
         </MainLayout>
     )
 }

@@ -18,7 +18,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contacto" className="py-16 bg-[var(--negro)]">
+        <section className="py-16 bg-[var(--negro)]">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--blanco)] mb-12">
                     Ponte en <span className="text-[var(--verde)]">Contacto</span>

@@ -3,6 +3,7 @@ import Inicio from '@/pages/Inicio';
 import Servicios from '@/pages/Servicios';
 import Nosotros from '@/pages/Nosotros';
 import Portafolio from '@/pages/Portafolio';
+import Contacto from '@/pages/Contacto';
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
     {
         path: '/nosotros',
         element: <Nosotros />
+    },
+    {
+        path: '/contacto',
+        element: <Contacto />
     },
     {
         path: '/portafolio',
