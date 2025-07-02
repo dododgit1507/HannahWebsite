@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -35,10 +36,10 @@ const NavBar = () => {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-8">
-                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</a>
-                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</a>
-                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</a>
-                    <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</a>
+                    <Link to="/inicio" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</Link>
+                    <Link to="/servicios" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</Link>
+                    <Link to="/nosotros" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</Link>
+                    <Link to="/contacto" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</Link>
                     <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300">
                         Catálogo
                     </button>
@@ -62,10 +63,10 @@ const NavBar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-[var(--negro)] absolute left-0 right-0 z-20 shadow-lg py-4 px-6 animate-fadeIn">
                     <div className="flex flex-col space-y-4">
-                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</a>
-                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</a>
-                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</a>
-                        <a href="#" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</a>
+                        <Link to="/inicio" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Inicio</Link>
+                        <Link to="/servicios" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</Link>
+                        <Link to="/nosotros" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</Link>
+                        <Link to="/contacto" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</Link>
                         <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300 w-full text-center">
                             Catálogo
                         </button>

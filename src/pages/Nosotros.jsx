@@ -1,0 +1,11 @@
+import MainLayout from '@/layouts/MainLayout'
+
+const Nosotros = () => {
+    return (
+        <MainLayout>
+            <h1 className="text-2xl font-bold text-[var(--blanco)]">Nosotros</h1>
+        </MainLayout>
+    )
+}
+
+export default Nosotros
