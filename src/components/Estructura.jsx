@@ -1,14 +1,26 @@
-import React from 'react';
 import ProfileCard from './ReactBits/components/ProfileCard';
 import { teamMembers } from '@/utils/TeamData';
 
+//UI Components
+import Section from "@/components/ui/Section"
+
+//Animations
+import BlurText from './ReactBits/TextAnimations/BlurText'
+
 const Estructura = () => {
     return (
-        <section className="py-20 bg-[var(--negro)]">
+        <Section>
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4">
-                        Nuestro <span className="text-[var(--verde-limon)]">Equipo</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4 flex justify-center gap-3">
+                        <BlurText
+                            text="Nuestro Equipo"
+                            animateBy="words"
+                            className="justify-center"
+                            delay={100}
+                            direction="top"
+                            stepDuration={0.4}
+                        />
                     </h2>
                     <p className="text-lg text-[var(--gris-claro)] max-w-3xl mx-auto">
                         Conoce a los profesionales detrás de Hannah Produce. Un equipo multidisciplinario de expertos
@@ -19,7 +31,7 @@ const Estructura = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {teamMembers.map((member) => (
                         <div key={member.id} className="h-[400px]">
-                            <ProfileCard 
+                            <ProfileCard
                                 avatarUrl={member.avatarUrl}
                                 name={member.name}
                                 title={member.title}
@@ -38,7 +50,7 @@ const Estructura = () => {
 
                 <div className="mt-16 text-center">
                     <p className="text-lg text-[var(--blanco)] max-w-3xl mx-auto mb-8">
-                        Cada miembro de nuestro equipo aporta una perspectiva única y habilidades especializadas 
+                        Cada miembro de nuestro equipo aporta una perspectiva única y habilidades especializadas
                         que nos permiten ofrecer soluciones integrales y personalizadas para cada cliente.
                     </p>
                     <button className="px-8 py-3 text-lg font-medium bg-[var(--verde)] text-[var(--negro)] rounded-md hover:bg-[var(--verde-limon)] transition-all duration-300">
@@ -46,7 +58,7 @@ const Estructura = () => {
                     </button>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 
