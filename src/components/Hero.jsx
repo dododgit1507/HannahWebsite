@@ -46,18 +46,18 @@ const Hero = () => {
                     <CardSwap
                         width={400}
                         height={300}
-                        cardDistance={40}
-                        verticalDistance={50}
-                        delay={5000}
+                        cardDistance={100}
+                        verticalDistance={100}
+                        delay={4000}
                         pauseOnHover={false} // Si paso el mouse por encima se detiene
-                        skewAmount={8}
+                        skewAmount={1}
                         easing="elastic"
                         onCardClick={(index) => console.log(`Clicked project: ${projectsData[index].title}`)}
                     >
                         {projectsData.map((project) => (
                             <Card key={project.id} >
                                 <h3 className="font-semibold p-2 text-[var(--blanco)]">{project.title}</h3>
-                                <img src={project.image} alt={project.title} />
+                                <img src={project.image} alt={project.title} onClick={() => window.open(project.link, '_blank')} className='hover:scale-110 transition-all duration-300 cursor-pointer' />
                             </Card>
                         ))}
                     </CardSwap>

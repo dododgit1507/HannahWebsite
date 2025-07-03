@@ -10,7 +10,7 @@ const Inicio = () => {
             <Hero />
             <Herramientas />
             <Tecnologias />
-            {/* <Colaboradores /> */}
+            <Colaboradores />
         </MainLayout>
     )
 }

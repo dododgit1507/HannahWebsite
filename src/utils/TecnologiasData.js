@@ -2,51 +2,96 @@ export const tecnologiasData = [
   {
     id: 1,
     content: "Python",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    img: "/webp/python.webp"
   },
   {
     id: 2,
     content: "JavaScript",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    img: "/webp/js.webp"
   },
   {
     id: 3,
     content: "TypeScript",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    img: "/webp/ts.webp"
   },
   {
     id: 4,
     content: "C#",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    img: "/webp/csharp.webp"
   },
   {
     id: 5,
     content: "React",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    img: "/webp/react.webp"
   },
   {
     id: 6,
     content: "Angular",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+    img: "/webp/angular.webp"
   },
   {
     id: 7,
     content: "NestJS",
-    img: "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
+    img: "/webp/nestjs.webp"
   },
   {
     id: 8,
-    content: "PostgreSQL",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    content: "SpringBoot",
+    img: "/webp/springboot.webp"
   },
   {
     id: 9,
-    content: "MySQL",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    content: "NodeJS",
+    img: "/webp/nodejs.webp"
   },
   {
     id: 10,
+    content: "Kotlin",  
+    img: "/webp/kotlin.webp",
+  },
+  {
+    id: 11,
+    content: "PostgreSQL",
+    img: "/webp/postgresql.webp"
+  },
+  {
+    id: 12,
+    content: "MySQL",
+    img: "/webp/mysql.webp"
+  },
+  {
+    id: 13,
     content: "Firebase",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    img: "/webp/firebase.webp"
+  },
+  {
+    id: 14,
+    content: "MongoDB",
+    img: "/webp/mongodb.webp"
+  },
+  {
+    id: 15,
+    content: "Illustrator",
+    img: "/webp/illustrator.webp"
+  },
+  {
+    id: 16,
+    content: "Premiere",
+    img: "/webp/premiere.webp"
+  },
+  {
+    id: 17,
+    content: "After Effects",
+    img: "/webp/aftereffects.webp"
+  },
+  {
+    id: 18,
+    content: "Blender", 
+    img: "/webp/blender.webp"
+  },
+  {
+    id: 19,
+    content: "DaVinci", 
+    img: "/webp/davinci.webp"
   },
 ];

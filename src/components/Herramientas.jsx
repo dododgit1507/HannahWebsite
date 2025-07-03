@@ -7,21 +7,21 @@ const Herramientas = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4">
-                        Herramientas que <span className="text-[var(--verde-limon)]">manejan</span> herramientas
+                        Herramientas que <span className="text-[var(--verde-limon)]">manejan tus</span> herramientas
                     </h2>
                 </div>
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Imagen ilustrativa */}
                     <div className="relative overflow-hidden rounded-lg h-[400px] shadow-xl">
-                        <img 
-                            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                        <video 
+                            src="/video/tronveo3.mp4" 
                             alt="Automatización de herramientas" 
                             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                            autoPlay
+                            loop
+                            muted
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                            <p className="text-[var(--blanco)] p-6 text-xl font-semibold">Automatizamos las herramientas que ya usas</p>
-                        </div>
                     </div>
                     
                     {/* Contenido de texto */}

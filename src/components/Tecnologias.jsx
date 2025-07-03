@@ -1,9 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Section from "@/components/ui/Section";
 import { tecnologiasData } from '@/utils/TecnologiasData';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Tecnologias = () => {
+    const [visibleTechs, setVisibleTechs] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isChanging, setIsChanging] = useState(false);
+    const techsPerGroup = 4;
+    const displayDuration = 3000; // 3 segundos por grupo
+
+    useEffect(() => {
+        // Función para actualizar las tecnologías visibles
+        const updateVisibleTechs = () => {
+            setIsChanging(true);
+
+            setTimeout(() => {
+                const startIdx = currentIndex % tecnologiasData.length;
+                let newVisibleTechs = [];
+
+                // Seleccionar 4 tecnologías consecutivas desde la posición actual
+                for (let i = 0; i < techsPerGroup; i++) {
+                    const idx = (startIdx + i) % tecnologiasData.length;
+                    newVisibleTechs.push(tecnologiasData[idx]);
+                }
+
+                setVisibleTechs(newVisibleTechs);
+                setCurrentIndex(currentIndex + techsPerGroup);
+                setIsChanging(false);
+            }, 500); // Pequeña pausa para la animación de salida
+        };
+
+        // Inicializar con las primeras tecnologías
+        if (visibleTechs.length === 0) {
+            updateVisibleTechs();
+        }
+
+        // Configurar el intervalo para cambiar las tecnologías
+        const intervalId = setInterval(() => {
+            updateVisibleTechs();
+        }, displayDuration);
+
+        // Limpiar el intervalo cuando el componente se desmonte
+        return () => clearInterval(intervalId);
+    }, [currentIndex, visibleTechs.length]);
+
     return (
         <Section>
             <div className="container mx-auto px-6">
@@ -72,25 +114,28 @@ const Tecnologias = () => {
 
                         {/* Tecnologias que dominamos */}
                         <div className="flex-1">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                                {tecnologiasData.map((tech, index) => (
-                                    <ScrollReveal 
-                                        key={tech.id} 
-                                        direction="up" 
-                                        delay={0.1 + index * 0.05} 
-                                        duration={0.4}
-                                        distance={20}
-                                    >
-                                        <div className="bg-[var(--negro-claro)] p-3 sm:p-4 rounded-lg flex items-center justify-center">
-                                            <img 
-                                                src={tech.img} 
-                                                alt={tech.content} 
-                                                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:scale-110 transition-all duration-300"
-                                            />
-                                        </div>
-                                    </ScrollReveal>
-                                ))}
-                            </div>
+                            <ScrollReveal direction="up" delay={0.3} distance={30}>
+                                <div className="grid grid-cols-2 gap-4 aspect-square">
+                                    <AnimatePresence mode="wait">
+                                        {visibleTechs.map((tech) => (
+                                            <motion.div
+                                                key={tech.id}
+                                                initial={{ opacity: 0, scale: 0.8 }}
+                                                animate={{ opacity: 1, scale: 1 }}
+                                                exit={{ opacity: 0, scale: 0.8 }}
+                                                transition={{ duration: 0.5 }}
+                                                className="bg-[var(--negro-claro)] p-3 sm:p-4 rounded-lg flex items-center justify-center"
+                                            >
+                                                <img
+                                                    src={tech.img}
+                                                    alt={tech.content}
+                                                    className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-48 lg:h-48 hover:scale-110 transition-all duration-300"
+                                                />
+                                            </motion.div>
+                                        ))}
+                                    </AnimatePresence>
+                                </div>
+                            </ScrollReveal>
                         </div>
                     </div>
                 </div>
