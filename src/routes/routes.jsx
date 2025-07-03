@@ -8,11 +8,11 @@ import Contacto from '@/pages/Contacto';
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Navigate to="/inicio" />,
+        element: <Inicio />
     },
     {
         path: '/inicio',
-        element: <Inicio />
+        element: <Navigate to="/" />
     },
     {
         path: '/servicios',

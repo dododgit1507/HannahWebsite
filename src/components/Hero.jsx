@@ -2,14 +2,13 @@ import React from 'react';
 import CardSwap, { Card } from './ReactBits/components/CardSwap';
 import { projectsData } from '@/utils/ProjectsData';
 import Threads from '@/components/ReactBits/backgrounds/Threads';
-import BlurText from './ReactBits/TextAnimations/BlurText';
 
 const Hero = () => {
     return (
         <div className="relative w-full h-screen bg-[var(--negro)] overflow-hidden">
 
             {/* Aurora background effect */}
-            <div className="absolute inset-0 z-0">
+            {/* <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 z-0">
                     <Threads
                         amplitude={4}
@@ -17,40 +16,26 @@ const Hero = () => {
                         enableMouseInteraction={true}
                     />
                 </div>
-            </div>
+            </div> */}
 
             {/* Hero content - Two column layout */}
             <div className="relative z-10 w-full h-full flex flex-col lg:flex-row">
                 {/* Left column - Text content */}
                 <div className="w-full lg:w-1/2 h-full flex flex-col justify-center px-8 lg:px-16 pt-16 lg:pt-0">
                     <h1 className="text-4xl md:text-6xl font-bold text-[var(--blanco)] mb-6">
-                        <BlurText 
-                            text="Hannah Produce" 
-                            animateBy="words"
-                            className="justify-start"
-                            delay={100}
-                            direction="top"
-                            stepDuration={0.4}
-                        />
+                        Hannah <span className="text-[var(--verde-limon)]">Produce</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-[var(--blanco)] max-w-xl mb-4">
-                        <BlurText 
-                            text="Herramientas que manejan tus herramientas" 
-                            animateBy="words"
-                            className="justify-start"
-                            delay={150}
-                            direction="top"
-                            stepDuration={0.35}
-                        />
-                    </p>
-                    <p className="text-lg text-[var(--gris-claro)] max-w-xl mb-8">
+                    <h2 className="text-lg md:text-xl font-semibold text-[var(--blanco)] mb-4">
+                        Herramientas que manejan tus herramientas
+                    </h2>
+                    <p className="text-base md:text-lg text-[var(--gris-claro)] max-w-xl mb-8">
                         Soluciones de automatización y producción audiovisual para optimizar tus procesos
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="px-8 py-3 text-lg font-medium bg-[var(--verde)] text-[var(--negro)] rounded-md hover:bg-[var(--verde-limon)] transition-all duration-300">
+                        <button className="px-8 py-3 text-base md:text-lg font-medium bg-[var(--verde)] text-[var(--negro)] rounded-md hover:bg-[var(--verde-limon)] transition-all duration-300">
                             Nuestros Servicios
                         </button>
-                        <button className="px-8 py-3 text-lg font-medium border border-[var(--verde)] text-[var(--blanco)] rounded-md hover:bg-[var(--verde-limon)] hover:text-[var(--negro)] transition-all duration-300">
+                        <button className="px-8 py-3 text-base md:text-lg font-medium border border-[var(--verde)] text-[var(--blanco)] rounded-md hover:bg-[var(--verde-limon)] hover:text-[var(--negro)] transition-all duration-300">
                             Contactar
                         </button>
                     </div>

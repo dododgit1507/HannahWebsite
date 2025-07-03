@@ -1,6 +1,5 @@
 //UI Components
 import Section from "@/components/ui/Section"
-import BlurText from "./ReactBits/TextAnimations/BlurText"
 
 const Herramientas = () => {
     return (
@@ -8,14 +7,7 @@ const Herramientas = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4">
-                        <BlurText 
-                            text="Herramientas que manejan herramientas" 
-                            animateBy="words"
-                            className="justify-center"
-                            delay={100}
-                            direction="top"
-                            stepDuration={0.4}
-                        />
+                        Herramientas que <span className="text-[var(--verde-limon)]">manejan</span> herramientas
                     </h2>
                 </div>
                 

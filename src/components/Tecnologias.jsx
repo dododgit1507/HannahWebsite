@@ -1,8 +1,5 @@
 import React from 'react';
 import Section from "@/components/ui/Section";
-import BlurText from "./ReactBits/TextAnimations/BlurText";
-import InfiniteScroll from "./ReactBits/components/InfiniteScroll";
-import { tecnologiasData } from "@/utils/TecnologiasData";
 
 const Tecnologias = () => {
     return (
@@ -10,14 +7,7 @@ const Tecnologias = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4">
-                        <BlurText
-                            text="Tecnologías que dominamos"
-                            animateBy="words"
-                            className="justify-center"
-                            delay={100}
-                            direction="top"
-                            stepDuration={0.4}
-                        />
+                        Tecnologías que <span className="text-[var(--verde-limon)]">dominamos</span>
                     </h2>
                 </div>
 
@@ -59,25 +49,6 @@ const Tecnologias = () => {
                             Nuestro equipo se mantiene constantemente actualizado con las últimas tecnologías y tendencias
                             para ofrecer soluciones innovadoras y de vanguardia.
                         </p>
-                    </div>
-
-                    {/* InfiniteScroll - Lado derecho */}
-                    <div className="h-[600px] overflow-hidden relative">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <InfiniteScroll
-                                width="100%"
-                                maxHeight="600px"
-                                negativeMargin="-0.2em"
-                                items={tecnologiasData}
-                                itemMinHeight={80}
-                                isTilted={true}
-                                tiltDirection="left"
-                                autoplay={true}
-                                autoplaySpeed={0.3}
-                                autoplayDirection="down"
-                                pauseOnHover={true}
-                            />
-                        </div>
                     </div>
                 </div>
             </div>
