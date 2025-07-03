@@ -14,13 +14,10 @@ const Herramientas = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Imagen ilustrativa */}
                     <div className="relative overflow-hidden rounded-lg h-[400px] shadow-xl">
-                        <video 
-                            src="/video/tronveo3.mp4" 
+                        <img 
+                            src="/gift/tronveo3.gif" 
                             alt="Automatización de herramientas" 
                             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                            autoPlay
-                            loop
-                            muted
                         />
                     </div>
                     
