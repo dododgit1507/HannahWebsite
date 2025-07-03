@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Masonry from './ReactBits/components/Masonri';
+import Masonry from './ReactBits/components/Masonry';
 import { colaboradoresData } from '@/utils/ColaboradoresData';
 import { useNavigate } from 'react-router-dom';
 import BlurText from './ReactBits/TextAnimations/BlurText';

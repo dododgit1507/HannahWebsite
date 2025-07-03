@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     // Handle scroll effect for navbar
     useEffect(() => {
@@ -40,8 +42,10 @@ const NavBar = () => {
                     <Link to="/servicios" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</Link>
                     <Link to="/nosotros" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</Link>
                     <Link to="/contacto" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</Link>
-                    <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300">
-                        Catálogo
+                    <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300"
+                            onClick={() => navigate("/portafolio")}
+                    >
+                        Portafolio
                     </button>
                 </div>
 
@@ -67,8 +71,10 @@ const NavBar = () => {
                         <Link to="/servicios" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Servicios</Link>
                         <Link to="/nosotros" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Nosotros</Link>
                         <Link to="/contacto" className="text-[var(--blanco)] hover:text-[var(--verde-limon)] transition-colors duration-300">Contacto</Link>
-                        <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300 w-full text-center">
-                            Catálogo
+                        <button className="px-4 py-2 bg-[var(--verde)] text-[var(--negro)] rounded hover:bg-[var(--verde-limon)] transition-all duration-300 w-full text-center"
+                        onClick={() => navigate('/portafolio')}
+                        >
+                            Portafolio
                         </button>
                     </div>
                 </div>
