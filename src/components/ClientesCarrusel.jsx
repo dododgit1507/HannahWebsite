@@ -77,7 +77,7 @@ const ClientesCarrusel = () => {
                             <div className="bg-[var(--negro)] rounded-lg p-4 shadow-lg w-[180px] h-[120px] flex items-center justify-center hover:scale-105 transition-transform duration-300">
                                 <img 
                                     src={cliente.img} 
-                                    alt={cliente.name} 
+                                    alt={cliente.name}
                                     className="max-w-full max-h-full object-contain" 
                                 />
                             </div>

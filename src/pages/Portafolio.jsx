@@ -70,7 +70,7 @@ const Portafolio = () => {
                     <h3 className="text-3xl font-bold text-[var(--blanco)] mb-8 text-center mt-16">Algunos de nuestros <span className="text-[var(--verde-limon)]">proyectos</span></h3>
 
                     {/* Contenedor con altura fija para el Masonry */}
-                    <div className="w-full h-[700px] mb-16">
+                    <div className="w-full h-[500px] mb-16">
                         <ScrollReveal>
                             <Masonry
                                 items={colaboradoresData}
