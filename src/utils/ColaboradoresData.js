@@ -50,23 +50,66 @@ export const colaboradoresData = [
   },
   {
     id: 8,
-    name: "LogisticPro",
-    img: "/img/audiovisual/trabajador_3.webp",
+    name: "KCB",
+    img: "/img/audiovisual/kcb_1.webp",
     height: 260,
-    description: "Automatización de procesos logísticos y de distribución"
+    description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 9,
-    name: "EventMaster",
-    img: "/img/audiovisual/trabajador_4.webp",
-    height: 300,
+    name: "KCB",
+    img: "/img/audiovisual/kcb_2.webp",
+    height: 260,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 10,
-    name: "FoodTech",
-    img: "/img/audiovisual/trabajador_5.webp",
-    height: 280,
-    description: "Automatización de procesos en industria alimentaria"
+    name: "KCB",
+    img: "/img/audiovisual/kcb_3.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 11,
+    name: "Monnet",
+    img: "/img/audiovisual/monnet_1.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 12,
+    name: "Monnet",
+    img: "/img/audiovisual/monnet_2.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 13,
+    name: "Monnet",
+    img: "/img/audiovisual/monnet_3.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 14,
+    name: "Hpepalooza",
+    img: "/img/audiovisual/hpepalooza_1.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 15,
+    name: "Hpepalooza",
+    img: "/img/audiovisual/hpepalooza_2.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  },
+  {
+    id: 16,
+    name: "Hpepalooza",
+    img: "/img/audiovisual/hpepalooza_3.webp",
+    height: 260,
+    description: "Producción audiovisual para eventos corporativos"
+  
   }
 ];

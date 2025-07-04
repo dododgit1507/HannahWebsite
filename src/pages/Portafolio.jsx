@@ -1,9 +1,8 @@
 import MainLayout from "@/layouts/MainLayout"
 import Section from "@/components/ui/Section"
 import ScrollReveal from "@/components/ui/ScrollReveal"
-import Masonry from "@/components/ReactBits/components/Masonry"
-import BlurText from "@/components/ReactBits/TextAnimations/BlurText"
 import ClientesCarrusel from "@/components/ClientesCarrusel"
+import ProyectosGaleria from "@/components/ProyectosGaleria"
 import { colaboradoresData } from '@/utils/ColaboradoresData'
 
 const Portafolio = () => {
@@ -13,14 +12,7 @@ const Portafolio = () => {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-[var(--blanco)] mb-4">
-                            <BlurText
-                                text="Nuestro Portafolio"
-                                animateBy="words"
-                                className="justify-center"
-                                delay={100}
-                                direction="top"
-                                stepDuration={0.4}
-                            />
+                            Nuestro <span className="text-[var(--verde-limon)]">Portafolio</span>
                         </h2>
                         <p className="text-lg text-[var(--gris-claro)] max-w-3xl mx-auto mb-8">
                             Hemos colaborado con empresas líderes en diversos sectores, desarrollando soluciones
@@ -29,7 +21,7 @@ const Portafolio = () => {
                     </div>
 
                     {/* Descripción de proyectos realizados */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-[var(--negro-claro)] p-6 rounded-lg shadow-lg">
                             <h3 className="text-xl font-bold text-[var(--verde-limon)] mb-3">Automatización Industrial</h3>
                             <p className="text-[var(--gris-claro)] mb-4">
@@ -66,31 +58,19 @@ const Portafolio = () => {
                             </div>
                         </div>
                     </div>
-
-                    <h3 className="text-3xl font-bold text-[var(--blanco)] mb-8 text-center mt-16">Algunos de nuestros <span className="text-[var(--verde-limon)]">proyectos</span></h3>
-
-                    {/* Contenedor con altura fija para el Masonry */}
-                    <div className="w-full h-[500px] mb-16">
-                        <ScrollReveal>
-                            <Masonry
-                                items={colaboradoresData}
-                                ease="power3.out"
-                                duration={0.6}
-                                stagger={0.05}
-                                animateFrom="bottom"
-                                scaleOnHover={true}
-                                hoverScale={0.95}
-                                blurToFocus={true}
-                                colorShiftOnHover={false}
-                            />
-                        </ScrollReveal>
-                    </div>
-
-                    {/* Carrusel de clientes */}
-                    <ClientesCarrusel />
-
                 </div>
             </Section>
+            
+            <Section>
+                <div className="container mx-auto px-6">
+                    <h3 className="text-3xl font-bold text-[var(--blanco)] mb-8 text-center">Algunos de nuestros <span className="text-[var(--verde-limon)]">proyectos</span></h3>
+                    <ScrollReveal>
+                        <ProyectosGaleria items={colaboradoresData} />
+                    </ScrollReveal>
+                </div>
+            </Section>
+            
+            <ClientesCarrusel />
         </MainLayout>
     )
 }

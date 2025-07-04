@@ -74,7 +74,7 @@ const ClientesCarrusel = () => {
                             key={cliente.id} 
                             className="flex-shrink-0"
                         >
-                            <div className="bg-[var(--negro)] rounded-lg p-4 shadow-lg w-[180px] h-[120px] flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                            <div className="bg-[var(--negro)] rounded-lg p-4 shadow-lg w-[180px] h-[120px] flex items-center justify-center hover:scale-150 transition-transform duration-300">
                                 <img 
                                     src={cliente.img} 
                                     alt={cliente.name}
