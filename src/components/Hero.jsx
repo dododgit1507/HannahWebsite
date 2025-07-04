@@ -42,12 +42,12 @@ const Hero = () => {
                 </div>
 
                 {/* Right column - CardSwap component */}
-                <div className="w-full lg:w-1/2 h-full flex items-center justify-center">
+                <div className="w-full lg:w-1/3 h-full flex items-center justify-center">
                     <CardSwap
-                        width={400}
-                        height={300}
+                        width={500}
+                        height={350}
                         cardDistance={100}
-                        verticalDistance={100}
+                        verticalDistance={70}
                         delay={4000}
                         pauseOnHover={false} // Si paso el mouse por encima se detiene
                         skewAmount={1}
@@ -56,7 +56,7 @@ const Hero = () => {
                     >
                         {projectsData.map((project) => (
                             <Card key={project.id} >
-                                <h3 className="font-semibold p-2 text-[var(--blanco)]">{project.title}</h3>
+                                <h3 className="font-semibold p-3 text-[var(--blanco)]">{project.title}</h3>
                                 <img src={project.image} alt={project.title} onClick={() => window.open(project.link, '_blank')} className='hover:scale-110 transition-all duration-300 cursor-pointer' />
                             </Card>
                         ))}
