@@ -9,3 +9,8 @@
   --gris-claro: #a4a4a4;
   --blanco: #F1F1F1;
 }
+
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari y Opera */
+}
