@@ -3,6 +3,7 @@ import Section from "@/components/ui/Section"
 import ScrollReveal from "@/components/ui/ScrollReveal"
 import ClientesCarrusel from "@/components/ClientesCarrusel"
 import ProyectosGaleria from "@/components/ProyectosGaleria"
+import Reel from "@/components/Reel"
 import { colaboradoresData } from '@/utils/ColaboradoresData'
 
 const Portafolio = () => {
@@ -60,7 +61,12 @@ const Portafolio = () => {
                     </div>
                 </div>
             </Section>
-            
+
+            {/* Sección de Video Reel */}
+            <Section>
+                <Reel />
+            </Section>
+
             <Section>
                 <div className="container mx-auto px-6">
                     <h3 className="text-3xl font-bold text-[var(--blanco)] mb-8 text-center">Algunos de nuestros <span className="text-[var(--verde-limon)]">proyectos</span></h3>
@@ -69,7 +75,7 @@ const Portafolio = () => {
                     </ScrollReveal>
                 </div>
             </Section>
-            
+
             <ClientesCarrusel />
         </MainLayout>
     )

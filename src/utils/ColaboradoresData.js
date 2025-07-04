@@ -52,56 +52,56 @@ export const colaboradoresData = [
     id: 8,
     name: "KCB",
     img: "/img/audiovisual/kcb_1.webp",
-    height: 260,
+    height: 140,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 9,
     name: "KCB",
     img: "/img/audiovisual/kcb_2.webp",
-    height: 260,
+    height: 320,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 10,
     name: "KCB",
     img: "/img/audiovisual/kcb_3.webp",
-    height: 260,
+    height: 320,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 11,
     name: "Monnet",
     img: "/img/audiovisual/monnet_1.webp",
-    height: 260,
+    height: 320,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 12,
     name: "Monnet",
     img: "/img/audiovisual/monnet_2.webp",
-    height: 260,
+    height: 190,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 13,
     name: "Monnet",
     img: "/img/audiovisual/monnet_3.webp",
-    height: 260,
+    height: 190,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 14,
     name: "Hpepalooza",
     img: "/img/audiovisual/hpepalooza_1.webp",
-    height: 260,
+    height: 190,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
     id: 15,
     name: "Hpepalooza",
     img: "/img/audiovisual/hpepalooza_2.webp",
-    height: 260,
+    height: 190,
     description: "Producción audiovisual para eventos corporativos"
   },
   {
